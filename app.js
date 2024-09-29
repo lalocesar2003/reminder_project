@@ -30,7 +30,7 @@ class EmailNotification {
 // WhatsApp Notification (active)
 class WhatsAppNotification {
   send(payload) {
-    return fetch("https://hook.us1.make.com/y8kwqvmvflwxtadnb1v4vh73u944wy8v", {
+    return fetch("https://hook.us1.make.com/5d2yblu62d3mnsck1rmlwn4yionej80j", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
