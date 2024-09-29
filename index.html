@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Send Notification</h1>
+    <form id="notificationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" required />
+
+      <label for="reason">Reason:</label>
+      <input type="text" id="reason" name="reason" required />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="methods">Send via:</label>
+      <div id="methods">
+        <input type="checkbox" id="emailMethod" name="method" value="email" />
+        <label for="emailMethod">Email</label><br />
+
+        <input
+          type="checkbox"
+          id="whatsappMethod"
+          name="method"
+          value="whatsapp"
+        />
+        <label for="whatsappMethod">WhatsApp</label><br />
+
+        <input type="checkbox" id="smsMethod" name="method" value="sms" />
+        <label for="smsMethod">SMS</label><br />
+      </div>
+
+      <button type="submit">Send Notification</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
